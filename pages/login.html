@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+
+</head>
+<body>
+<!----banner----->
+<div class="container-width login-banner">
+    <div class="web-width">
+    <div class="index-banner">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <span>
+                    <a class="navbar-brand" href="index.html">heimao</a>
+                </span>
+            </div>
+        </nav>
+    </div>
+    <form class="login-box">
+        <div class="welcome">
+            <h1>Welcome to heimao</h1>
+            <span>Login your account</span>
+        </div>
+
+        <div class="form-group" >
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="button" class="btn btn-primary" onClick="login()">Login</button>
+    </form>
+    </div>
+</div>
+
+<!----copyright----->
+<div class="site-info copyright">
+    <a href="https://amazon.shidatuos.cn/">heimao | All Rights Reserved</a>
+</div>
+
+<script type="text/javascript">
+	//获取url后的参数值
+	function getUrlParam(key) {
+		var href = window.location.href;
+		var url = href.split("?");
+		if(url.length <= 1){
+			return "";
+		}
+		var value = "";
+		var params = url[1].split("&");
+		
+		for(var i=0; i<params.length; i++){
+			var param = params[i].split("=");
+			if(key == param[0]){
+	            value = decodeURI(param[1]);
+			}
+		}
+		return value;
+	}
+	
+	var amazon_callback_uri = "";
+	var amazon_state = "";
+	var selling_partner_id = "";
+	
+	function initData () {
+		amazon_callback_uri = getUrlParam("amazon_callback_uri");
+		amazon_state = getUrlParam("amazon_state");
+		selling_partner_id = getUrlParam("selling_partner_id");
+	}
+	
+	initData();
+	function check(username,password) {
+		if($.trim(username)==""){
+			alert("用户名不能为空！");
+			return false;
+		}
+		if($.trim(password)==""){
+			alert("密码不能为空！");
+			return false;
+		}
+		return true;
+	}
+	function login () {
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+		if (check(username,password)) {
+			$.ajax({
+				type: "post",
+				url:'/login/login',
+				dataType : "json",
+				data : {
+					username : username,
+					password : password
+				},
+				success : function(data) {
+					if (data.code == '200') {
+						if(amazon_callback_uri != ""){
+							var url = amazon_callback_uri+"?redirect_uri=https://amazon.shidatuos.cn/callback.html&amazon_state="+amazon_state+"&state=jrowi9956&version=beta";
+							window.location.href = decodeURIComponent(url);
+						}else{
+							window.location.href = '/index.html';
+						}
+					} else {
+						alert(data.msg);
+					}
+				}
+			});
+		}
+	}
+</script>
+</body>
+</html>

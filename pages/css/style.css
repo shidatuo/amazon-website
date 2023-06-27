@@ -1,0 +1,284 @@
+ul{
+    list-style-type: none;
+}
+
+/*login*/
+.login-banner{
+    background: url("../images/loginbg.jpg") no-repeat;
+    height: 900px;
+
+}
+.login-banner .web-width{
+    position: relative;
+}
+.login-banner .navbar-brand{
+    padding-top: 2rem;
+    color: #307ffd;
+}
+.login-box{
+    position: absolute;
+    top: 13rem;
+    right: 4rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding:3rem 4rem;
+}
+.welcome{
+    margin-bottom: 2rem;
+}
+.welcome span{
+    color: #999;
+}
+
+.btn-primary{
+    width: 100%;
+    border-radius: 10rem;
+    padding: .8rem;
+}
+
+
+
+
+
+
+
+
+
+/*banner*/
+.banner{
+    background: url("../images/index-banner.png") no-repeat;
+    height: 900px;
+}
+.web-width{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo{
+    background: url("../images/logo.png") top no-repeat;
+    height: 128px;
+    display: block;
+    margin: 2rem auto;
+    width: 10%;
+}
+.login-icon{
+    background: url("../images/user.png") left no-repeat;
+    padding-left: 2rem !important;
+}
+.navbar-brand{
+    padding-top: 5rem;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+}
+.nav-link{
+    color: #fff;
+    margin: 0 1rem;
+}
+.nav-link:hover{
+    color: #ccc;
+}
+.active{
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+.banner-text{
+    color: #fff;
+    padding-top: 7rem;
+}
+.banner-text h1{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    width: 80%;
+    letter-spacing: .05em;
+    line-height: 7rem;
+}
+.banner-text span{
+    width: 20%;
+    font-size: 1.5rem;
+}
+
+/*mission*/
+.mission-title{
+    padding: 3rem;
+    text-align: center;
+}
+.mission-title h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    background: url("../images/title2.png") bottom no-repeat;
+    height: 6rem;
+}
+.mission-title span{
+    color: #999;
+    padding-top: 2rem;
+    display: block;
+    font-size: 1.2rem;
+}
+.mission ul,.advantage ul{
+    display: flex;
+    margin: 6rem auto;
+}
+.mission li{
+    width: 33%;
+    text-align: center;
+}
+.mission ul span{
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+/*advantage*/
+.advantage{
+    margin-bottom: 2rem;
+}
+.advantage .advantage-title{
+    background: url("../images/advantage-title.png") bottom no-repeat;
+}
+.advantage .mission-title{
+
+}
+.advantage-title h1{
+    background: url("../images/title3.png") bottom no-repeat;
+    color: #fff;
+}
+.advantage-title span{
+    color: #fff;
+}
+.advantage-list .col-6{
+    margin: 4rem auto 2rem auto;
+    max-width: 40%;
+    border-radius: 1.5rem;
+}
+.advantage1{
+    background: url("../images/advantage-1.png") center no-repeat;
+    height: 248px;
+    padding: 2rem;
+}
+.advantage2{
+    background: url("../images/advantage-2.png") center no-repeat;
+    height: 248px;
+    padding: 2rem;
+
+}
+.advantage3{
+    background: url("../images/advantage-3.png") center no-repeat;
+    height: 248px;
+    padding: 2rem;
+}
+.advantage4{
+    background: url("../images/advantage-4.png") center no-repeat;
+    height: 248px;
+    padding: 2rem;
+}
+.advantage-list h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.advantage-list span{
+    width: 50%;
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+/*Product Features*/
+.pro-title{
+    background: #307ffd url("../images/title3.png") bottom no-repeat;
+    color: #fff;
+    height: 9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding:3rem 0 ;
+}
+.product-features-banner{
+    width: 100%;
+ }
+.product-features{
+    background:  url("../images/product-bg.png") bottom no-repeat;
+    height: 900px;
+}
+/*copyright*/
+.copyright{
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+}
+.copyright a{color: #666}
+
+/*about-us*/
+.about-us-banner{
+    background: url("../images/aboutus-banner.png") no-repeat;
+    height: 800px;
+}
+.policy-banner{
+    background: url("../images/safety-banner.png") no-repeat;
+    height: 800px;
+}
+.product-banner{
+    background: url("../images/logistics-banner.png") no-repeat;
+    height: 800px;
+}
+.about-us h1{
+    text-align: center;
+    margin: 0 auto;
+}
+.about-us span{
+    font-size: 1rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+.text-p{width: 70%;
+    margin: 0 auto 5rem auto;
+    color: #666;
+    line-height: 2rem;
+}
+
+.product-1{
+    background: url("../images/product-1.png") top center no-repeat;
+}
+.product-2{
+    background: url("../images/product-2.png") top center no-repeat;
+}
+.product-3{
+    background: url("../images/product-3.png") top center no-repeat;
+}
+.product-4{
+    background: url("../images/product-4.png") top center no-repeat;
+}
+.product-5{
+    background: url("../images/product-5.png") top center no-repeat;
+}
+.product-6{
+    background: url("../images/product-6.png") top center no-repeat;
+}
+.product-7{
+    background: url("../images/product-7.png") top center no-repeat;
+}
+.product-8{
+    background: url("../images/product-8.png") top center no-repeat;
+}
+.product-box h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 8rem;
+    text-align: center;
+}
+.product-box span{
+    color: #999;
+    text-align: center;
+    display: block;
+    font-size: .9rem;
+}
+.product-box .row div{
+    margin-bottom: 4rem;
+}

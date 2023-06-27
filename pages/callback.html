@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>heimao Authorization</title>
+
+</head>
+<body>
+<p id="auth_msg">Processing Authorization...</p>
+<input type="hidden" id="access_token" />
+<input type="hidden" id="refresh_token" />
+
+<script type="text/javascript">
+	//获取url后的参数值
+	function getUrlParam(key) {
+		var href = window.location.href;
+		var url = href.split("?");
+		if(url.length <= 1){
+			return "";
+		}
+		var value = "";
+		var params = url[1].split("&");
+		
+		for(var i=0; i<params.length; i++){
+			var param = params[i].split("=");
+			if(key == param[0]){
+	            value = decodeURI(param[1]);
+			}
+		}
+		return value;
+	}
+	
+	var selling_partner_id = "";
+	var mws_auth_token = "";
+	var spapi_oauth_code = "";
+	var state = "";
+	
+	function saveInfo(selling_partner_id, code,access_token,refresh_token){
+		$.ajax({
+			type: "post",
+			url:'/login/saveAuthInfo',
+			dataType : "json",
+			ansy : true,
+			data : {
+				code : code,
+				selling_partner_id : selling_partner_id,
+				access_token : access_token,
+				refresh_token : refresh_token
+			},
+			success : function(data) {
+				if (data.code == '200') {
+					alert("授权成功!")
+					$("#auth_msg").html("授权成功!");
+				} else {
+					alert("授权失败!");
+				}
+			}
+		});
+	}
+	
+	function initData () {
+		selling_partner_id = getUrlParam("selling_partner_id");
+		mws_auth_token = getUrlParam("mws_auth_token");
+		spapi_oauth_code = getUrlParam("spapi_oauth_code");
+		state = getUrlParam("state");
+		
+		$.ajax({
+			type : "POST",
+			url : "https://api.amazon.com/auth/o2/token",
+			data : {
+				grant_type : "authorization_code",
+				code : spapi_oauth_code,
+				redirect_uri : decodeURIComponent("https://amazon.shidatuos.cn/index.html"),
+				client_id : "",
+				client_secret : ""
+			},
+			dataType : "json",
+			contentType : "application/x-www-form-urlencoded;charset=UTF-8",
+			success : function(data) {
+				//alert(data.access_token);
+				//alert(data.refresh_token);
+				console.log(data.access_token)
+				console.log(data.refresh_token)
+				$("#access_token").val(data.access_token);
+				$("#refresh_token").val(data.refresh_token);
+				saveInfo(selling_partner_id,spapi_oauth_code,data.access_token,data.refresh_token);
+			},error : function(XMLHttpRequest, textStatus, errorThrown){
+				alert("授权失败!")
+			}
+		});
+	}
+	
+	initData();
+	
+</script>
+<!----copyright----->
+<div class="site-info copyright">
+    <a href="https://amazon.shidatuos.cn/">heimao | All Rights Reserved</a>
+</div>
+</body>
+</html>

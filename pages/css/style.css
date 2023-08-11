@@ -4,7 +4,7 @@ ul{
 
 /*login*/
 .login-banner{
-    background: url("../images/loginbg.jpg") no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/loginbg.jpg") no-repeat;
     height: 900px;
 
 }
@@ -46,7 +46,7 @@ ul{
 
 /*banner*/
 .banner{
-    background: url("../images/index-banner.png") no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/index-banner.png") no-repeat;
     height: 900px;
 }
 .web-width{
@@ -54,14 +54,14 @@ ul{
     margin: 0 auto;
 }
 .logo{
-    background: url("../images/logo.png") top no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/logo.png") top no-repeat;
     height: 128px;
     display: block;
     margin: 2rem auto;
     width: 10%;
 }
 .login-icon{
-    background: url("../images/user.png") left no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/user.png") left no-repeat;
     padding-left: 2rem !important;
 }
 .navbar-brand{
@@ -109,7 +109,7 @@ ul{
 .mission-title h1{
     text-transform: uppercase;
     font-weight: bold;
-    background: url("../images/title2.png") bottom no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/title2.png") bottom no-repeat;
     height: 6rem;
 }
 .mission-title span{
@@ -139,13 +139,13 @@ ul{
     margin-bottom: 2rem;
 }
 .advantage .advantage-title{
-    background: url("../images/advantage-title.png") bottom no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/advantage-title.png") bottom no-repeat;
 }
 .advantage .mission-title{
 
 }
 .advantage-title h1{
-    background: url("../images/title3.png") bottom no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/title3.png") bottom no-repeat;
     color: #fff;
 }
 .advantage-title span{
@@ -157,23 +157,23 @@ ul{
     border-radius: 1.5rem;
 }
 .advantage1{
-    background: url("../images/advantage-1.png") center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/advantage-1.png") center no-repeat;
     height: 248px;
     padding: 2rem;
 }
 .advantage2{
-    background: url("../images/advantage-2.png") center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/advantage-2.png") center no-repeat;
     height: 248px;
     padding: 2rem;
 
 }
 .advantage3{
-    background: url("../images/advantage-3.png") center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/advantage-3.png") center no-repeat;
     height: 248px;
     padding: 2rem;
 }
 .advantage4{
-    background: url("../images/advantage-4.png") center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/advantage-4.png") center no-repeat;
     height: 248px;
     padding: 2rem;
 }
@@ -190,7 +190,7 @@ ul{
 }
 /*Product Features*/
 .pro-title{
-    background: #307ffd url("../images/title3.png") bottom no-repeat;
+    background: #307ffd url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/title3.png") bottom no-repeat;
     color: #fff;
     height: 9rem;
     text-transform: uppercase;
@@ -202,7 +202,7 @@ ul{
     width: 100%;
  }
 .product-features{
-    background:  url("../images/product-bg.png") bottom no-repeat;
+    background:  url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-bg.png") bottom no-repeat;
     height: 900px;
 }
 /*copyright*/
@@ -215,15 +215,15 @@ ul{
 
 /*about-us*/
 .about-us-banner{
-    background: url("../images/aboutus-banner.png") no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/aboutus-banner.png") no-repeat;
     height: 800px;
 }
 .policy-banner{
-    background: url("../images/safety-banner.png") no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/safety-banner.png") no-repeat;
     height: 800px;
 }
 .product-banner{
-    background: url("../images/logistics-banner.png") no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/logistics-banner.png") no-repeat;
     height: 800px;
 }
 .about-us h1{
@@ -244,28 +244,28 @@ ul{
 }
 
 .product-1{
-    background: url("../images/product-1.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-1.png") top center no-repeat;
 }
 .product-2{
-    background: url("../images/product-2.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-2.png") top center no-repeat;
 }
 .product-3{
-    background: url("../images/product-3.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-3.png") top center no-repeat;
 }
 .product-4{
-    background: url("../images/product-4.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-4.png") top center no-repeat;
 }
 .product-5{
-    background: url("../images/product-5.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-5.png") top center no-repeat;
 }
 .product-6{
-    background: url("../images/product-6.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-6.png") top center no-repeat;
 }
 .product-7{
-    background: url("../images/product-7.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-7.png") top center no-repeat;
 }
 .product-8{
-    background: url("../images/product-8.png") top center no-repeat;
+    background: url("https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/images/product-8.png") top center no-repeat;
 }
 .product-box h3{
     font-size: 1.2rem;

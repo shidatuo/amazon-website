@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>heimao Authorization</title>
+    <script src="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/js/bootstrap.js"></script>
+    <script src="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/css/bootstrap.css">
+    <link rel="stylesheet" href="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/css/style.css">
+    <title>cangshu Authorization</title>
 
 </head>
 <body>
@@ -25,7 +25,7 @@
 		}
 		var value = "";
 		var params = url[1].split("&");
-		
+
 		for(var i=0; i<params.length; i++){
 			var param = params[i].split("=");
 			if(key == param[0]){
@@ -34,12 +34,12 @@
 		}
 		return value;
 	}
-	
+
 	var selling_partner_id = "";
 	var mws_auth_token = "";
 	var spapi_oauth_code = "";
 	var state = "";
-	
+
 	function saveInfo(selling_partner_id, code,access_token,refresh_token){
 		$.ajax({
 			type: "post",
@@ -62,20 +62,20 @@
 			}
 		});
 	}
-	
+
 	function initData () {
 		selling_partner_id = getUrlParam("selling_partner_id");
 		mws_auth_token = getUrlParam("mws_auth_token");
 		spapi_oauth_code = getUrlParam("spapi_oauth_code");
 		state = getUrlParam("state");
-		
+
 		$.ajax({
 			type : "POST",
 			url : "https://api.amazon.com/auth/o2/token",
 			data : {
 				grant_type : "authorization_code",
 				code : spapi_oauth_code,
-				redirect_uri : decodeURIComponent("https://amazon.shidatuos.cn/index.html"),
+				redirect_uri : decodeURIComponent("https://amazon.smallhamster.cn/index.html"),
 				client_id : "",
 				client_secret : ""
 			},
@@ -94,13 +94,13 @@
 			}
 		});
 	}
-	
+
 	initData();
-	
+
 </script>
 <!----copyright----->
 <div class="site-info copyright">
-    <a href="https://amazon.shidatuos.cn/">heimao | All Rights Reserved</a>
+    <a href="https://amazon.smallhamster.cn/">cangshu | All Rights Reserved</a>
 </div>
 </body>
 </html>

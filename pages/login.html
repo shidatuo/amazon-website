@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/js/bootstrap.js"></script>
+    <script src="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/css/bootstrap.css">
+    <link rel="stylesheet" href="https://saas-1257030744.cos.ap-beijing.myqcloud.com/amazon_website/css/style.css">
     <title>Login</title>
 
 </head>
@@ -18,14 +18,14 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <span>
-                    <a class="navbar-brand" href="index.html">heimao</a>
+                    <a class="navbar-brand" href="index.html">cangshu</a>
                 </span>
             </div>
         </nav>
     </div>
     <form class="login-box">
         <div class="welcome">
-            <h1>Welcome to heimao</h1>
+            <h1>Welcome to cangshu</h1>
             <span>Login your account</span>
         </div>
 
@@ -49,7 +49,7 @@
 
 <!----copyright----->
 <div class="site-info copyright">
-    <a href="https://amazon.shidatuos.cn/">heimao | All Rights Reserved</a>
+    <a href="https://amazon.smallhamster.cn/">cangshu | All Rights Reserved</a>
 </div>
 
 <script type="text/javascript">
@@ -62,7 +62,7 @@
 		}
 		var value = "";
 		var params = url[1].split("&");
-		
+
 		for(var i=0; i<params.length; i++){
 			var param = params[i].split("=");
 			if(key == param[0]){
@@ -71,17 +71,17 @@
 		}
 		return value;
 	}
-	
+
 	var amazon_callback_uri = "";
 	var amazon_state = "";
 	var selling_partner_id = "";
-	
+
 	function initData () {
 		amazon_callback_uri = getUrlParam("amazon_callback_uri");
 		amazon_state = getUrlParam("amazon_state");
 		selling_partner_id = getUrlParam("selling_partner_id");
 	}
-	
+
 	initData();
 	function check(username,password) {
 		if($.trim(username)==""){
@@ -109,7 +109,7 @@
 				success : function(data) {
 					if (data.code == '200') {
 						if(amazon_callback_uri != ""){
-							var url = amazon_callback_uri+"?redirect_uri=https://amazon.shidatuos.cn/callback.html&amazon_state="+amazon_state+"&state=jrowi9956&version=beta";
+							var url = amazon_callback_uri+"?redirect_uri=https://amazon.smallhamster.cn/callback.html&amazon_state="+amazon_state+"&state=jrowi9956&version=beta";
 							window.location.href = decodeURIComponent(url);
 						}else{
 							window.location.href = '/index.html';
